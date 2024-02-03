@@ -36,4 +36,13 @@ public class Binary_To_Decimal
 		}
 		return res;
 	}
+	static int binaryToDecimal(int arr[])
+	{
+		int sum=0;
+		for(int i=0;i<arr.length;i++0
+		{
+			sum=sum*2;
+			sum=sum+arr[i];
+		}
+		return sum;
 }
