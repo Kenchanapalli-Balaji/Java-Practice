@@ -7,6 +7,8 @@ public class Find_Maxrow_Maxcol_In_2D_Array
 	{
 		int arr[][]= {{3,7,8},{9,11,13},{15,16,17}};
 		// To find maximum value in each row and in each column
+
+
 		/*
 		for(int i=0;i<arr.length;i++)
 		{

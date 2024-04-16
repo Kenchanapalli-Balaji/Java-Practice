@@ -26,8 +26,8 @@ public class Add_Two_Matrix
 					ar3[i][j]=ar1[i][j]+ar2[i][j];
 				}
 			}
-//		System.out.println(ar1.length+"    "+ar2.length);//rows
-//		System.out.println(ar1[0].length+"   "+ar2[0].length);//columns
+		System.out.println(ar1.length+"    "+ar2.length);//rows
+		System.out.println(ar1[0].length+"   "+ar2[0].length);//columns
 		
 		
 		for(int i[]:ar3)

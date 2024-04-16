@@ -26,7 +26,7 @@ public class Square_Root_Of_A_Number
 		*/
 		
 		
-		// Solution 2 :- Using Binary search Approach If we did notget exact square root we will print floor value	
+		// Solution 2 :- Using Binary search Approach If we did not get exact square root we will print floor value	
 		static int sqrt(int n)
 		{
 			int l=1;

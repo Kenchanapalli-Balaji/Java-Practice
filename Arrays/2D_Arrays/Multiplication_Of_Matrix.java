@@ -10,7 +10,7 @@ If the product of two matrices is a zero matrix, it is not necessary that one of
 ------------------------------------------------------------------------------------------------------------
 2×2 Matrix Multiplication :- 
 Let’s consider a simple 2 × 2 matrix multiplication
-		3 7		6 2
+	3 7	6 2
   a=	4 9   b=5 8
 Now each of the elements of product matrix AB can be calculated as follows:
 
@@ -19,7 +19,7 @@ AB12 = 3 × 2 + 7 × 8 = 62
 AB21 = 4 × 6 + 9 × 5 = 69
 AB22 = 4 × 2 + 9 × 8 = 80
 Therefore,
-	53 62
+    53 62
 res=69 80
 ----------------------------------------------------------------------------------------------------
 
@@ -27,7 +27,7 @@ res=69 80
 To understand the multiplication of two 3 × 3 matrices, let us consider two 3 × 3 matrices A and B.
 		12 8 4		5 19 3
  		3 17 14		6 15 9
- A=		9 8 10    B=7 8 16
+          A=    9 8 10        B=7 8 16
  
 Each element of the Product matrix AB can be calculated as follows:
 
@@ -42,7 +42,7 @@ AB32 = 9×19 + 8×15 + 10×8 = 371
 AB33 = 9×3 + 8×9 + 10×16 = 259
 Therefore,
 		136 380 172
- res=	215 424 386
+          res=	215 424 386
 		163 371 259
  
  */
@@ -58,7 +58,7 @@ public class Multiplication_Of_Matrix
 		int n=arr1.length;
 		int res[][]=new int[n][n];
 		for(int i=0;i<n;i++)
-		{
+		{ 
 			for(int j=0;j<n;j++)
 			{
 				res[i][j]=0;
