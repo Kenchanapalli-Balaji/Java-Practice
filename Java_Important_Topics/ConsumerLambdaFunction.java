@@ -1,3 +1,10 @@
+/*
+	 		3. Consumer<T> -------> accept()
+ 		=================================
+ 			-> Consumer Interface contains only one method i.e accept()
+ 			-> Consumer interface will take one argument but it does not return any value.
+*/
+
 import java.util.ArrayList;
 import java.util.function.*;
 class Demo

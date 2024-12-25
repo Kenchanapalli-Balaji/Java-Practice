@@ -1,3 +1,12 @@
+/*
+1. Predicate<T> ------> test()
+ 		==============================
+ 			-> In Predicate Interface it contains only one method i.e test() & it returns only boolean value.
+ 			-> it takes only one Argument and it returns true or false.
+ 			-> whenever we have some validations then we can invoke test() method.
+
+ */
+
 import java.util.function.Predicate;
 class PredicateLambdaFunction
 {
@@ -11,7 +20,7 @@ class PredicateLambdaFunction
 		
 		for(int i=0;i<=a.length-1; i++)
 		{
-			if(p1.and(p2).test(a[i]))
+			if(p1.and(p2).test(a[i])) // if(p1.test(a[i] && p2.test(a[i])))
 			{
 				System.out.println(a[i]);
 			}
