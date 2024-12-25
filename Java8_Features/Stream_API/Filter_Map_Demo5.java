@@ -32,7 +32,7 @@ public class Filter_Map_Demo5
 				new Employee(4,"Deekshith",22000),
 				new Employee(5,"Vishnu",32000)
 				);
-		emps.stream().filter(e->e.salary>20000).map(e->e.salary).forEach(System.out::println);
+		emps.stream().filter(e->e.salary>20000).map(e->e.salary+1).forEach(System.out::println);
 		
 	}
 }

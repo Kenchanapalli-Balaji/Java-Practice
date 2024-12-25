@@ -26,14 +26,13 @@ public class FilterDemo1
 		
 ///////////////////////////  With using StreamAPI  ///////////////////////////
 		
-		/*
+		
 		evenlist=al.stream().filter(n->n%2==0).collect(Collectors.toList());
 		System.out.println(evenlist);
-		*/
-		al.stream().filter(n->n%2==0).forEach(n->System.out.println(n));
+		
+		al.stream().filter(n->n%2==0).forEach(n->System.out.print(n+" "));
 		   // OR //
-		al.stream().filter(n->n%2==0).forEach(System.out::println);
-		
-		
+		System.out.println();
+		al.stream().filter(n->n%2==0).forEach(System.out::println);		
 	}
 }

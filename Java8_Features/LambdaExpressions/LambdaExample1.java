@@ -1,4 +1,4 @@
-package java8_Features.LambdaExpressions;
+package LambdaExpressions;
 
 public class LambdaExample1  
 {

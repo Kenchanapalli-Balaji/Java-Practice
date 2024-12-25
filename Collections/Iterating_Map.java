@@ -16,6 +16,7 @@ public class Iterating_Map
 		indmap.put(10,"Rohith");
 		System.out.println(indmap);
 		System.out.println("Iterating Map using entrySet()");
+
 		Set<Entry<Integer,String>> set=indmap.entrySet();
 		for(Entry<Integer,String> entry:set)
 		{
@@ -23,12 +24,14 @@ public class Iterating_Map
 			String val=entry.getValue();
 			System.out.println(key+" ="+val);
 		}
+
 		System.out.println("iterating Map using keySet()");
 		Set<Integer> s=indmap.keySet();
 		for(Integer i:s)
 		{
 			System.out.println("Key ="+i+" and value is : "+indmap.get(i));
 		}
+		
 		System.out.println("iterating Map using values()");
 		Collection<String> c=indmap.values();
 		for(String s1:c)

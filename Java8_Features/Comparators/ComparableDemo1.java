@@ -22,7 +22,7 @@ class Student implements Comparable<Student>
 	
 	public int compareTo(Student s)
 	{
-		return -((Integer)this.age).compareTo(s.age);
+		return ((Integer)this.age).compareTo(s.age);
 	}
 }
 public class ComparableDemo1 

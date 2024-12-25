@@ -1,4 +1,4 @@
-package java8_Features.LambdaExpressions;
+package LambdaExpressions;
 /*
  * Note :
  * 1. m2() method present in interface and class are different , its not overridded.
