@@ -6,7 +6,6 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="Engineer"/>
     <fullyQualifiedTypeName name="SWEngineer"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="TicketBooking"/>
     <fullyQualifiedTypeName name="Threadclass"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
@@ -15,4 +14,8 @@
     <fullyQualifiedTypeName name="java.util.function.Predicate"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="Important.Car"/>
+    <fullyQualifiedTypeName name="Important.DieselEngine"/>
+    <fullyQualifiedTypeName name="Important.ElectricEngine"/>
 </qualifiedTypeNameHistroy>
