@@ -18,4 +18,6 @@
     <fullyQualifiedTypeName name="Important.Car"/>
     <fullyQualifiedTypeName name="Important.DieselEngine"/>
     <fullyQualifiedTypeName name="Important.ElectricEngine"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
 </qualifiedTypeNameHistroy>
