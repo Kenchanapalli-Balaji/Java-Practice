@@ -1,3 +1,4 @@
+package Important;
 /*
 	 		3. Consumer<T> -------> accept()
  		=================================

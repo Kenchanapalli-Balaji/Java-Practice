@@ -5,20 +5,15 @@ public class Sample
 {
 	public static void main(String[] args) 
 	{
-		int n=19;
-		System.out.println(isHappy(n));
-	}
-	static boolean isHappy(int n)
-	{
-		if(n<10)
-			return n==1||n==7;
-		int sum=0;
-		while(n>0)
+		int n=8;
+		int sum=n*(n+1)/2;
+		int sumr=0;
+		for(int i=1;i<=n;i++)
 		{
-			int r=n%10;
-			sum=sum+r*r;
-			n=n/10;
+			if(sum==sumr+i)
+				System.out.println(i);
+			sum=sum-i;
+			sumr=sumr+i;
 		}
-		return isHappy(sum);
 	}
 }

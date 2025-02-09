@@ -6,6 +6,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="G:\Learning Projects\Java Practice\Java Practice\Arrays"/>
+			<item value="G:\Learning Projects\DataStructures"/>
+			<item value="G:\Learning Projects\DataStructures\src\Linear DataStructures"/>
 			<item value="G:\Learning Projects\Java Practice\Java Practice\Numbers"/>
 			<item value="G:\Learning Projects\Java Practice\Java Practice\Java8_Features1"/>
 			<item value="G:\Learning Projects\Java Practice"/>

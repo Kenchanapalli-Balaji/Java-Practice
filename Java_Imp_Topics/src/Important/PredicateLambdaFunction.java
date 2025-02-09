@@ -1,3 +1,4 @@
+package Important;
 /*
 1. Predicate<T> ------> test()
  		==============================

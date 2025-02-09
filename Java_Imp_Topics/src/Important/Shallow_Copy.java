@@ -1,5 +1,5 @@
 /*
- -> ShallowCopy stores the references of objects to the original memory Address.
+ -> ShallowCopy stores the references of objects to the original memory Address. 
  -> Shallow copy reflects changes made to the new/copied object in the original object.
  -> Shallow copy stores the copy of the orignal object and points the references to the objects.
  */
@@ -44,6 +44,7 @@ public class Shallow_Copy
 			c4.cid=c1.cid;
 			c4.cname=c1.cname;
 			c4.add=c1.add;
+		c4.add.city="Mangalore";
 		Customer c5=new Customer(c1);
 		System.out.println("C1:"+c1);
 		System.out.println("C2:"+c2);
@@ -52,6 +53,8 @@ public class Shallow_Copy
 		System.out.println("C3.add:"+c3.add);// The address of C1 & C3 will be same this is called Shallow Copy
 		System.out.println("C4:"+c4);
 		System.out.println("C5:"+c5);
+		System.out.println(a1.city);
+		System.out.println(c4.add.city); // Shallow copy will affect in original Object
 		
 	}
 }

@@ -1,3 +1,4 @@
+package Important;
 /*
  -> Synchronization in java is the capability to control the access of 
  	multiple threads to any shared resource.

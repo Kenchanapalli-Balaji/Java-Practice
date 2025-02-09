@@ -1,3 +1,4 @@
+package Important;
 /*
 	2. Function<T,R> -----> apply()
  		===============================

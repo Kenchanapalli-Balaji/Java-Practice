@@ -48,12 +48,15 @@ public class Deep_Copy
 			c4.cid=c1.cid;
 			c4.cname=c1.cname;
 			c4.add=new Address1(c1.add.city,c1.add.state,c1.add.country); // Deep Copy
+		c4.add.city="Mangalore";
 		Customer1 c5=new Customer1(c1);
 		System.out.println("C1:"+c1);
 		System.out.println("C2:"+c2);
 		System.out.println("C3:"+c3);
 		System.out.println("c1.add:"+c1.add);
 		System.out.println("c4.add:"+c4.add);// Here we will get different address copy's of C1 & C4
+		System.out.println(add.city);
+		System.out.println(c4.add.city); // Deep Copy will not affect in Original Object
 		
 	}
 
