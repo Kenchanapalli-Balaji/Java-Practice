@@ -1,6 +1,6 @@
 package Important;
 /*
-	2. Function<T,R> -----> apply()
+	2. Function<T,R> -----> apply()s
  		===============================
  		-> Functional Interface cantains only one method i.e apply()
  		-> apply() method can accept any type data and it will return single value/type.

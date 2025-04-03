@@ -15,6 +15,38 @@ public class Student1
 		this.age = age;
 		this.school = school;
 	}
+	
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getSchool() {
+		return school;
+	}
+
+	public void setSchool(String school) {
+		this.school = school;
+	}
 
 	@Override
 	public String toString() {
@@ -28,10 +60,13 @@ public class Student1
 		Student1 s4=new Student1(4, "Deekshith",3, "Play School");
 		List<Student1> list=Arrays.asList(s1,s2,s3,s4);
 		List<Student1>	res=list.stream().sorted(Comparator.comparingInt(s->s.age)).toList();
-		for(Student1 s:res)
-		{
-			System.out.println(s);
-		}
+		res.forEach(System.out::println);
+		
+		List<Student1> reverseList=list.stream()
+                .sorted(Comparator.comparingInt(Student1::getAge).reversed())
+                .toList();
+		reverseList.forEach(System.out::println);
+		
 	}
 	
 
