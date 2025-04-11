@@ -15,15 +15,18 @@ public class Find_Duplicate_Elements
 {
 	public static void main(String[] args) {
 		List<Integer> list = Arrays.asList(1,2,3,4,5,6,7,8,1,3,5,7);
+		
 		// 1st Method using Set
 		Set<Integer> set = new HashSet<Integer>();
 		List<Integer> uniqueList =list.stream().filter(n->!set.add(n)).collect(Collectors.toList());
 		System.out.println("1st method Using Set :\n"+uniqueList);
 		
+		
 		//second method using Collection.frequency
 		Set<Integer> uniqueSet=	list.stream().filter(n->Collections.frequency(list,n)>1)
 											 .collect(Collectors.toSet());
 		System.out.println("Second method using Collections.frequency :\n"+uniqueSet);
+		
 		
 		
 		// Third method using Collectors groupingBy

@@ -32,10 +32,15 @@ public class Distinct_Demo8
 		
 		///////////////// min() /////////////////////////
 		Optional<Integer> min=list.stream().min((val1,val2)->{return val1.compareTo(val2);});
+// -> 		list.stream().min((a,b)->a.compareTo(b));
+// ->		list.stream().min(Integer::compareTo); 
 		System.out.println("minimum value in the list: " +min.get());
 		
 		////////////////  max()  ////////////////////////
 		Optional<Integer> max=list.stream().max((val1, val2)->{return val1.compareTo(val2);});
+		
+// ->		list.stream().min((a,b)->a.compareTo(b));
+// ->		list.stream().min(Integer::compareTo);
 		System.out.println("Maximum value in the list:  "+max.get());
 		
 		/////////////// reduce() ////////////////////////
