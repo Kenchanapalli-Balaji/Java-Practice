@@ -1,5 +1,9 @@
 package Arrays;
 import java.util.HashMap;
+import java.util.function.Function;
+import java.util.function.IntUnaryOperator;
+import java.util.stream.Collectors;
+import java.util.*;
 
 class Count_Occurence_Of_Elements_In_Array
 {
@@ -9,14 +13,6 @@ class Count_Occurence_Of_Elements_In_Array
 		HashMap<Integer, Integer> hm=new HashMap<Integer,Integer>();
 		for(int i:arr)
 		{
-			/*
-			if(hm.containsKey(i))
-			{
-				hm.put(i, hm.get(i)+1);
-			}
-			else
-				hm.put(i,1);
-			*/
 			hm.put(i, hm.getOrDefault(i,0)+1);
 		}
 		

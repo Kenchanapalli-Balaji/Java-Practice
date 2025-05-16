@@ -76,7 +76,8 @@ public class Employe
 //					 .collect(Collectors.toList());
 //		for(Employe e : filteredList)
 //			System.out.println(e);
-		Optional<Employe> emp = list.stream().collect(Collectors.maxBy(Comparator.comparing(Employe::getSal)));
+		// Optional<Employe> emp = list.stream().collect(Collectors.maxBy(Comparator.comparing(Employe::getSal)));
+	   Optional<Employe> emp = list.stream().max(Comparator.comparing(Employe::getSal));
 		System.out.println("Higest Salary: "+ emp.get());
 		
 		Optional<Employe> e = list.stream().collect(Collectors.minBy(Comparator.comparing(Employe::getSal)));

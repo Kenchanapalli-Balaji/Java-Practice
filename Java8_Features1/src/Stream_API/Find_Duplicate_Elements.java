@@ -38,11 +38,20 @@ public class Find_Duplicate_Elements
 	
 		
 		String s="simple codes";
+		
+		System.out.println("Strings using Set Method :");
 		List<Character> characterList=new ArrayList<Character>();
 		Set<Character> characterSet=new HashSet<Character>();
 		for(char c:s.toCharArray())
 			characterList.add(c);
+		
 		characterList.stream().filter(c->!characterSet.add(c)).forEach(System.out::println);
+		
+		
+		System.out.println("String Using chars() Method: ");
+		s.chars().mapToObj(c->(char) c).filter(c->c!=' ')
+		.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+		.entrySet().stream().filter(e->e.getValue()>1).map(e->e.getKey()).forEach(str->System.out.println(str));
 			
 	
 	}

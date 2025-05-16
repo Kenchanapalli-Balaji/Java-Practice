@@ -92,6 +92,7 @@ public class Bitonic_Array
 		int a[]= {5,6,7,8,9,10,3,2,1};
 		int b=10;
 		int bitonic_index=findBitonicPoint(a);
+		System.out.println("Bitionic Index: "+ bitonic_index);
 		System.out.println(search(a, b, bitonic_index));
 	}
 }

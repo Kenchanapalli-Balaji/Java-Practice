@@ -35,6 +35,7 @@
 ================================
 -> Strings that are created without using new keyword are allocated memory on this pool.
 -> Duplicates are not allowed .
+
 2.Non Constant pool  :
 ====================================
 -> Strings are created using new keyword are allocated memory on this pool.
