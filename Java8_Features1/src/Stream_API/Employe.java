@@ -3,7 +3,9 @@ package Stream_API;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Employe 
@@ -107,5 +109,10 @@ public class Employe
 										.findFirst();
 		secondHigestSalary.ifPresent(s->System.out.println("Second Highest Salary :"+s));
 		
+		// Groping the Employee class by Department
+		
+			System.out.println(" Groping the Employee class by Department");
+			list.stream().collect(Collectors.groupingBy(Employe::getDepartment))
+			.entrySet().stream().forEach(ee->System.out.println(ee.getKey()+"-->"+ee.getValue()));
 	}
 }

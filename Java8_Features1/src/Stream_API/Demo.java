@@ -10,9 +10,16 @@ public class Demo
 	
 	public static void main(String[] args) 
 	{
-		String s="malayalamm";
-	Boolean res=IntStream.range(0, s.length()/2).allMatch(c->s.charAt(c)==s.charAt(s.length()-1-c));
-	System.out.println(res);
+		/*
+		 -> In given String print the Non repeated characters in reverse order 
+		 	separated by with ",".
+		 */
+		
+		String s="simple codes";
+		s.chars().mapToObj(c->(char)c).filter(c->c!=' ')
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+				.entrySet().stream().filter(e->e.getValue()==1).map(e->e.getKey())
+				.sorted(Comparator.reverseOrder()).forEach(c->System.out.print(c+", "));
 	}
 	
 }
