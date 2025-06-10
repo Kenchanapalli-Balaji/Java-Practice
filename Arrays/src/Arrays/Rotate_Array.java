@@ -14,9 +14,9 @@ public class Rotate_Array
 		k=k%arr.length;  // Example : if k=6, then its equal to rotate k%arr.length. i.e 6%5=1;
 		if(k<0)			// if K value is negative then we are converting into positive 
 			k=k+arr.length;
-		reverse(arr,0,k-1);
-		reverse(arr,k,arr.length-1);
-		reverse(arr,0,arr.length-1);
+		reverse(arr,0,k-1);     //  3 2 1 4 5 6 7  Reverse first 3 elements 
+		reverse(arr,k,arr.length-1); // 3 2 1 7 6 5 4  Reverse last 4 elements
+		reverse(arr,0,arr.length-1);  // 4 5 6 7 1 2 3 Reverse all the elemenns
 		System.out.println(Arrays.toString(arr));
 	}
 	public static void reverse(int arr[], int start, int end)
@@ -81,5 +81,23 @@ public class Rotate_Array
 			rotate_Once(arr);
 		}
 	}
+	*/
+	
+	// ++++++++++++++++++++++++++++++++ Third Method ++++++++++++++++++++++++++++
+	/*
+	int temp[]=new int[k];
+	for(int i=0;i<k;i++)
+	{
+		temp[i]=arr[i];
+	}
+	for(int i=k;i<arr.length;i++)
+	{
+		arr[i-k]=arr[i];
+	}
+	for(int i=arr.length-k;i<arr.length;i++)
+	{
+		arr[i]=temp[i-(arr.length-k)];
+	}
+	System.out.println(Arrays.toString(arr));
 	*/
 }
