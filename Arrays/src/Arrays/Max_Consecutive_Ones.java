@@ -15,12 +15,12 @@ public class Max_Consecutive_Ones
 				count++;
 				max=Math.max(count, max);
 			}
-			else if(arr[i]==0)
+			else 
 				count=0;
 		}
 		System.out.println(max);
 				
-		// Second Approach
+		//+++++++++++++++++++++ Second Approach +++++++++++++++++++++++++
 		/*
 		for(int i=0;i<arr.length;i++)
 		{

@@ -8,10 +8,32 @@ public class Missing_Number_In_Array
 		int n=ar.length+1;
 		// int n=ar.length; // if 0 Presents in given array
 		int sum=n*(n+1)/2;
-		for(int num=0;num<ar.length;num++)
+		for(int i:ar)
 		{
-			sum=sum-ar[num];
+			sum-=i;
 		}
 		System.out.println("Missing Number is : "+sum);
+		
+		
+		// +++++++++++++++++++ Brute Force Approach +++++++++++++++++++++++
+		/*
+		for(int i=1;i<ar.length;i++)
+		{
+			int flag=0;
+			for(int j=0;j<ar.length;j++)
+			{
+				if(ar[j]==i)
+				{
+					flag=1;
+					break;
+				}
+			}
+			if(flag==0)
+			{
+				System.out.println(i);
+				break;
+			}
+		}
+		*/
 	}
 }

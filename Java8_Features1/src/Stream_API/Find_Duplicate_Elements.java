@@ -16,6 +16,15 @@ public class Find_Duplicate_Elements
 	public static void main(String[] args) {
 		List<Integer> list = Arrays.asList(1,2,3,4,5,6,7,8,1,3,5,7);
 		
+		System.out.println("For long Integer Number");
+		long number =1234567890123456789L;
+		String.valueOf(number)
+		       .chars()
+		       .map(Character::getNumericValue)
+		       .boxed()
+		       .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
+		       .forEach((key,value)->System.out.println(key+"--->"+value));
+		
 		// 1st Method using Set
 		Set<Integer> set = new HashSet<Integer>();
 		List<Integer> uniqueList =list.stream().filter(n->!set.add(n)).collect(Collectors.toList());
