@@ -15,7 +15,7 @@ which has a length of 4. This sub-array starts at index 1 and ends at index 4,
 and the sum of its elements (5 + 2 + 7 + 1) equals 15. Therefore, the length of this sub-array 
 is 4.
  */
-public class Largest_Sub_Array_With_Given_Sum_K 
+public class Longest_Sub_Array_With_Given_Sum_K 
 {
 	public static void main(String[] args) 
 	{
