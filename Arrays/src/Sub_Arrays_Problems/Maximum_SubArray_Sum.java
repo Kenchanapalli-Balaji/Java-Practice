@@ -1,6 +1,6 @@
 //https://youtu.be/Qd_qhRsSays?list=PLU83Ru7iGtAvP1rqt65MCDSBPFCzUKGXG
 //leetcode - 53
-package Arrays;
+package Sub_Arrays_Problems;
 
 public class Maximum_SubArray_Sum 
 {

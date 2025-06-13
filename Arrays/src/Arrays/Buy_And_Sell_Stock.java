@@ -1,4 +1,5 @@
 //Leetcode 121
+//https://youtu.be/excAOvwF_Wk
 /*
  * You are given an array prices where prices[i] is the price of a given stock on the ith day.
 
@@ -7,7 +8,7 @@
 	Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0
 		
 	 ex: [7,1,5,3,6,4]
-	min= 7 and maxprofit=0
+			min= 7 and maxprofit=0
 	step 1 : 1<7  -> min=1 and maxprofit=1-1=0;
 	step 2 : 5!<1 -> min=1 and maxprofit= 5-1=4;
 	step 3 : 3!<1 -> min=1 and maxprofit= 3-1=2   soo max profit still remains 4 only

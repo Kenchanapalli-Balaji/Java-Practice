@@ -1,5 +1,5 @@
 //https://www.youtube.com/watch?v=yFgN2KlOrew&list=PLU83Ru7iGtAvP1rqt65MCDSBPFCzUKGXG&index=46
-package Arrays;
+package Sub_Arrays_Problems;
 
 public class Count_Subset_Sum 
 {

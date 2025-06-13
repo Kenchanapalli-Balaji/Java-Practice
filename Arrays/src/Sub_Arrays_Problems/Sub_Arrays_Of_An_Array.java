@@ -1,5 +1,5 @@
 //https://youtu.be/-eTVd7Vo2WE?list=PLU83Ru7iGtAvP1rqt65MCDSBPFCzUKGXG
-package Arrays;
+package Sub_Arrays_Problems;
 
 public class Sub_Arrays_Of_An_Array 
 {

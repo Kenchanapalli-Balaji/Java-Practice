@@ -1,5 +1,5 @@
 //https://youtu.be/jhW7VwP2Djw?list=PLU83Ru7iGtAvP1rqt65MCDSBPFCzUKGXG
-package Arrays;
+package Sub_Arrays_Problems;
 
 public class Maximum_Sum_SubArray_Of_Size_K 
 {
