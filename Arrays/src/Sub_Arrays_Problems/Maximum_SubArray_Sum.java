@@ -29,7 +29,7 @@ public class Maximum_SubArray_Sum
 		
 		////////////// Approach 2 /////////////////////////
 		
-		
+		///////////// Kadane's Algorithm ////////////////
 		int max=arr[0];
 		int sum=arr[0];
 		for(int i=1;i<arr.length;i++)

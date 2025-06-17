@@ -5,13 +5,20 @@ class Demo
 {
 	public static void main(String[] args) 
 	{
-		int[] arr= {100, 4, 200, 1, 3, 2};
+		int[] arr= {2,3,-2,4};
+		int max=0;
+		for(int i=0;i<arr.length;i++)
+		{
+			int prod=1;
+			for(int j=i;j<arr.length;j++)
+			{
+				prod=prod*arr[j];
+				max=Math.max(max, prod);
+			}
+		}
+		System.out.println(max);
 		
-		Set<Integer> set=new HashSet<Integer>();
-		for(int n:arr)
-			set.add(n);
-		System.out.println(set);
 	}
-	 
+	  
 }
 
