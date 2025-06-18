@@ -1,4 +1,4 @@
-package Strings;
+package Parentheses;
 
 import java.util.Stack;
 

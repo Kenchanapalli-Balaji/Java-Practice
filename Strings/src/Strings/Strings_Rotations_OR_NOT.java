@@ -1,3 +1,4 @@
+ // leetcode - 796 
 package Strings;
 
 public class Strings_Rotations_OR_NOT 
@@ -13,7 +14,7 @@ public class Strings_Rotations_OR_NOT
 //	}
 	
 	
-	// +++++++++++++++++++ Method 2u +++++++++++++++++++
+	// +++++++++++++++++++ Method 2 +++++++++++++++++++
 	public static boolean areRotations(String s1, String s2)
 	{
 		for(int i=0;i<s1.length();i++)

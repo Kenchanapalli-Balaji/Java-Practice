@@ -1,6 +1,6 @@
  //TUF
 // https://youtu.be/1xNbjMdbjug
-package Numbers;
+package numbers;
 
 import java.util.ArrayList;
 import java.util.List;
