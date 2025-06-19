@@ -1,7 +1,7 @@
 //Program for number of characters in each WORD and count them
 package Strings;
 
-public class No_Of_Characters 
+public class No_Of_Characters_In_Each_Word 
 {
 	public static void main(String[] args) 
 	{

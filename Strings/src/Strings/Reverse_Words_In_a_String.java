@@ -52,7 +52,7 @@ public class Reverse_Words_In_a_String
 		for(int i=words.length-1;i>=0;i--)
 		{
 			res.append(words[i]);
-			if(i!=0)
+			if(i>0) // i(!=0)
 				res.append(" ");
 		}
 		System.out.println(res.toString());

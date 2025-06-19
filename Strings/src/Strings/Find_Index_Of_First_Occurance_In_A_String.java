@@ -1,19 +1,21 @@
-//Find the Index of the First Occurrence in a String 
-// leetcode - 28
+//leetcode -28
 package Strings;
 
-public class Find_Index_Of_First_Occurence 
+import java.util.ArrayList;
+import java.util.List;
+
+public class Find_Index_Of_First_Occurance_In_A_String 
 {
 	public static void main(String[] args) 
 	{
-		String a="Balaji";
-		String b="ji";
-		System.out.println(a.contains(b));
+		String a="xyzabxyzabxyz";
+		String b="xyz";
+		List<Integer> list=new ArrayList<Integer>();
 		if(a.contains(b))
 		{
 			int l1=a.length();
 			int l2=b.length();
-			for(int i=0;i<l1;i++)
+			for(int i=0;i<=l1-l2;i++)
 			{
 				int c=0;
 				for(int j=0;j<l2;j++)
@@ -24,14 +26,14 @@ public class Find_Index_Of_First_Occurence
 				}
 				if(c==l2)
 				{
-					System.out.println("Length of teh characters: "+c);
+					System.out.println("Length of the characters: "+c);
 					System.out.println("Index of the Matching in First String: "+i);
-					break;
+					list.add(i);
 				}
 			}
 		}
 		else
-			System.out.println("No match");
+			System.out.println("No Match");
+		System.out.println(list);
 	}
-	
 }

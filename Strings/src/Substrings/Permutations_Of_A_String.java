@@ -1,5 +1,5 @@
 // https://youtu.be/vKQ6oUH02gw
-package Strings;
+package Substrings;
 
 public class Permutations_Of_A_String 
 {
