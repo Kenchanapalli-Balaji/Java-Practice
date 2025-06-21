@@ -1,4 +1,5 @@
 //leetcode -28
+// https://youtu.be/OWaZ6AosS30?list=PLjOcsOwEjb135TKtYNgd08hnioIV-C1rR
 package Strings;
 
 import java.util.ArrayList;
@@ -35,5 +36,21 @@ public class Find_Index_Of_First_Occurance_In_A_String
 		else
 			System.out.println("No Match");
 		System.out.println(list);
+		
+		//////////////////// Approach 2 Using Substring //////////////////////
+		int l1=a.length();
+		int l2=b.length();
+		for(int i=0;i<=l1-l2;i++)
+		{
+			if(a.charAt(i)==b.charAt(0))
+			{
+				if(a.substring(i,l2+i).equals(b))
+				{
+					System.out.println("Fist Index of :"+b +" is->"+ i);
+					break;
+				}
+			}
+		}
+		
 	}
 }

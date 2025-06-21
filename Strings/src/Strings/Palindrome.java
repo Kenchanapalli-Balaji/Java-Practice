@@ -32,8 +32,7 @@ class Palindrome
 			    return false;
   			else 
 			    i++;
-			    j--;
-			
+			    j--;	
 		}
 		return true;
 	
@@ -53,9 +52,7 @@ class Palindrome
 	}
 }*/
 
-
-//-------------------------------------------------------------------------------
-// Using the Recursion Method
+////////////////////// Using the Recursion Method ///////////////////////
 /*
 public static boolean isPalindrome(String s, int i, int j)
 {
@@ -67,34 +64,4 @@ public static boolean isPalindrome(String s, int i, int j)
 }
 */
 
-//------------------------------------------------------------------------------
 
-
-
-/* class Test
-{
-	public static void main(String[] args)
-	{
-		boolean res=true;
-		String str="mALaYalam";
-		str=str.toLowerCase();
-		int i=0;
-		int j=str.length()-1;
-		while(i<j)
-		{
-			if(str.charAt(i)!=str.charAt(j))
-				res=false;
-			else 
-				i++;
-				j--;
-		}
-		if(res==true)
-		{
-			System.out.println("YES");
-			
-		}
-		else
-			System.out.println("NO");
-	}
-}
-*/

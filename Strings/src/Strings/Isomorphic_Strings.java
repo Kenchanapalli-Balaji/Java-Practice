@@ -71,5 +71,7 @@ public class Isomorphic_Strings
 				isIsomorphic= false;
 			hm.put(s.charAt(i), t.charAt(i));
 		}
+		System.out.println(hm);
+		System.out.println(isIsomorphic);
 	}
 }
