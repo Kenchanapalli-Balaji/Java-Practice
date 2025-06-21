@@ -10,6 +10,8 @@ Output: "fl"
  */
 package Strings;
 
+import java.util.Arrays;
+
 public class Longest_Common_Prefix 
 {
 	public static void main(String[] args)
@@ -22,6 +24,22 @@ public class Longest_Common_Prefix
 				prefix=prefix.substring(0,prefix.length()-1);
 		}
 		System.out.println(prefix);
+		
+		/////////////// Approach 2 //////////////
+		/*
+		Arrays.sort(ar);
+		String s1=ar[0];
+		String s2=ar[ar.length-1];
+		int i=0;
+		while(i<s1.length())
+		{
+			if(s1.charAt(i)==s2.charAt(i))
+				i++;
+			else
+				break;		
+		}
+		return i==0?"":s1.substring(0,i);
+		*/
 		
 	}
 }

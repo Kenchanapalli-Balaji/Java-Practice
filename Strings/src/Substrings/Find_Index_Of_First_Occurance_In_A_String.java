@@ -1,6 +1,6 @@
 //leetcode -28
 // https://youtu.be/OWaZ6AosS30?list=PLjOcsOwEjb135TKtYNgd08hnioIV-C1rR
-package Strings;
+package Substrings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,6 +51,10 @@ public class Find_Index_Of_First_Occurance_In_A_String
 				}
 			}
 		}
+		
+		//////////////////// Approach 3 Using indexOf() Method //////////////
+		
+		System.out.println(a.indexOf(b));
 		
 	}
 }
