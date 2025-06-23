@@ -8,9 +8,10 @@
 	'c' maps to "-.-.", and so on.
 	For convenience, the full table for the 26 letters of the English alphabet is given below:
 
-	[".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.",
-	"--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
-	Given an array of strings words where each word can be written as a concatenation of the Morse code of each letter.
+	[".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.",
+	"---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+	Given an array of strings words where each word can be written as a concatenation 
+	of the Morse code of each letter.
 
 	For example, "cab" can be written as "-.-..--...", which is the concatenation of "-.-.", ".-", 
 	and "-...". We will call such a concatenation the transformation of a word.
@@ -43,6 +44,7 @@ public class Unique_Morse_Code_Words
 			}
 			set.add(sb.toString());
 		}
+		System.out.println(set);
 		System.out.println(set.size());
 	}
 }

@@ -54,8 +54,6 @@ public class Check_Whether_2_Strings_are_Almost_Equivalent
 			}
 				
 		}
-		System.out.println(isEqivalent);
-		
-		
+		System.out.println(isEqivalent);	
 	}
 }

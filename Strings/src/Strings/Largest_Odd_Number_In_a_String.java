@@ -30,7 +30,8 @@ public class Largest_Odd_Number_In_a_String
 		String s = "5347";
 		for(int i=s.length()-1;i>=0;i--)
 		{
-			if(Character.getNumericValue(s.charAt(i)) %2!=0)
+		  //if(Character.getNumericValue(s.charAt(i)) %2!=0)
+			if(s.charAt(i)-'0'%2!=0)
 			{
 				System.out.println(s.substring(0,i+1));
 				return;

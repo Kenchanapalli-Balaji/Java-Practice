@@ -62,41 +62,20 @@ class Demo
 {
 	public static void main(String[] args) 
 	{
-		String st1="Balaji";
-		st1=st1.toLowerCase();
-		
-		String st2="IJALBA";
-		st2=st2.toLowerCase();
-		
-		int ar1[]=new int[26];
-		int ar2[]=new int[26];
-		
-		for(int i=0;i<st1.length();i++)
+		String s = "silent";
+		String t="listen";
+		int[] schar=new int[26];
+		for(char ch:s.toCharArray())
+			schar[ch-97]++;
+		for(char ch:t.toCharArray())
+			schar[ch-97]--;
+		System.out.println(Arrays.toString(schar));
+		for(int i:schar)
 		{
-			if(st1.charAt(i)>='a' && st1.charAt(i)<='z')
-				ar1[st1.charAt(i)-97]++;
-				//ar1[i]=(st1.charAt(i)-97);
-		}
-		for(int i=0;i<st2.length();i++)
-		{
-			if(st2.charAt(i)>='a' && st2.charAt(i)<='z')
-				ar2[st2.charAt(i)-97]++;
-				//ar2[i]=(st1.charAt(i)-97);
+			if(i>0)
+				System.out.println("Not Anagram");
 		}
 		
-		boolean res=true;
-		for(int i=0;i<ar1.length;i++)
-		{
-			if(ar1[i]!=ar2[i])
-			{
-				res=false;
-			}
-		}
-		
-		if(res)
-			System.out.println("yes");
-		else
-			System.out.println("Not");
 		
 	}
 }

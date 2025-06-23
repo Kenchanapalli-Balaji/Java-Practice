@@ -6,8 +6,10 @@ public class Valid_Paranthesis
 {
 	public static void main(String[] args) 
 	{
-		System.out.println(isValid("({[]}"));
+		System.out.println(isValid("({[]})"));
+		System.out.println(vaild("({[]})"));
 	}
+	///////////////////////////// Approach 1 Using Stack //////////////////////
 	private static boolean isValid(String st) 
 	{
 		Stack<Character> stk=new Stack<>();
@@ -36,5 +38,22 @@ public class Valid_Paranthesis
 			}
 		}	
 		return stk.isEmpty();
+	}
+	
+	//////////////////////////// Approach 2 /////////////////////////
+	public static boolean vaild(String s)
+	{
+		while(true)
+		{
+			if(s.contains("()"))
+				s=s.replace("()", ""); // replacing with null value
+			else if(s.contains("[]"))
+				s=s.replace("[]", "");
+			else if(s.contains("{}"))
+				s=s.replace("{}", "");
+			else
+				return s.isEmpty();
+					
+		}
 	}
 }
