@@ -3,8 +3,8 @@
  Bitonic Array:- A Bitonic sequence is a sequence of numbers which is first strictly increasing
  					then after a point strictly decreasing.
 	Question : Search in Bitonic Array
-				-> Given a Bitonic sequence A of N distict elements,write a program to find a given element 
-					B in the bitonic sequence in O(logN) time.
+				-> Given a Bitonic sequence A of N distict elements,write a program to 
+				find a given element B in the bitonic sequence in O(logN) time.
 	Example 1 :
 			input :
 		 			A=[3,9,10,20,17,5,1];
@@ -14,10 +14,11 @@
 			In the above Example Bitonic point is 20.
 			
 			
-Algorith : 
+Algorithm : 
 			1.Find the point where the array can be split(Bitonic point).
 			2.check if the element is at the Bitonic point. if yes return the Bitonic point.
-			3.Otherwise perform the Binary search on left and right side of the Bitonic point using Binary search.
+			3.Otherwise perform the Binary search on left and right side of 
+			the Bitonic point using Binary search.
  */
 package Arrays;
 

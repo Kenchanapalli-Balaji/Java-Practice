@@ -33,7 +33,7 @@ public class Rotate_Array
 	
 	
 //______________________________________________________________________________
-//Solution :- Left Rotate by once
+//////////////////////// Left Rotate by once //////////////////////////////
 	/*
 	public static void main(String[] args) 
 	{
@@ -48,9 +48,23 @@ public class Rotate_Array
 		arr[arr.length-1]=temp;
 		System.out.println(Arrays.toString(arr));
 		*/
-//____}___________________________________________________________________
-		
-//Solution :- left Rotate array by K times
+	
+////////////////////// Right Rotate by once /////////////////////
+/*
+	int arr[]= {1,2,3,4,5};
+	System.out.println(Arrays.toString(arr));
+
+	int temp=arr[arr.length-1];
+	for(int i=arr.length-1;i>=1;i--)
+	{
+		arr[i]=arr[i-1];
+	}
+	arr[0]=temp;
+	System.out.println(Arrays.toString(arr));
+*/
+	
+	
+/////////////////////// left Rotate array by K times/////////////////////////
 	/*
 	public static void main(String[] args) 
 	{

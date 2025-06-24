@@ -9,7 +9,7 @@ public class Length_Of_Longest_Substring_Without_Repeating_Characters
 {
 	public static void main(String[] args) 
 	{
-		String s="pwwkew";
+		String s="abcabcbb";
 		int max_length=0;
 		int start=0; int end=0;
 		List<Character> list=new ArrayList<Character>();

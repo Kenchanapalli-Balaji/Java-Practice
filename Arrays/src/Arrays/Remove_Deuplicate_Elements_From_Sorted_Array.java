@@ -1,5 +1,5 @@
-//https://youtu.be/I0vmCnkcGW4 
 // leetcode - 26
+//https://youtu.be/I0vmCnkcGW4
 package Arrays;
 
 import java.util.Arrays;
@@ -10,8 +10,10 @@ public class Remove_Deuplicate_Elements_From_Sorted_Array
 	{
 		int arr[]= {2,2,3,3,4,6,6};
 		System.out.println(Arrays.toString(arr));
+		
 		int rd=removeDuplicate(arr);
 		System.out.println(Arrays.toString(arr));
+		
 		for(int i=0;i<rd;i++)
 			System.out.print(arr[i]+" ");
 	}

@@ -1,4 +1,4 @@
-// leetcode - 1
+ // leetcode - 1
 // https://youtu.be/UXDSeD9mN-k
 /*
  Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.

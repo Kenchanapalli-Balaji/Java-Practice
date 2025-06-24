@@ -1,6 +1,5 @@
-package Arrays;
 //leetcode - 724
-
+package Arrays;
 	/*
 	 Given an array of integers nums, calculate the pivot index of this array.
 	
@@ -39,7 +38,10 @@ public class Pivot_Index
 		{
 			rightsum=rightsum-arr[i];
 			if(rightsum==leftsum)
+			{
 				System.out.println(i);
+				break;
+			}
 			leftsum=leftsum+arr[i];
 		}
 	}

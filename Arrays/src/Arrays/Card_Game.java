@@ -1,11 +1,13 @@
 /*
- One day, Fred and his N friends were playing a card game in which each player throws a cardwith a 
- number written on it. The cards are such that a number X is written on front of the card, and the 
- negative of that number is written on the back side of the card. This game has the following rules:
- -> Each of the N players is asked to throw a card.After at the N cards are thrown. Fred has to flip one 
-  or more cards in consecutive order , only once.
- -> Your task is to help Fred flip the cards in such a way that the sum of the numbers, on front face of
-   the cards is the maximum.
+ One day, Fred and his N friends were playing a card game in 
+which each player throws a cardwith a 
+ number written on it. The cards are such that a number X is written on front of the card, 
+ and the negative of that number is written on the back side of the card. 
+ This game has the following rules:
+ -> Each of the N players is asked to throw a card.After at the N cards are thrown. 
+ 	Fred has to flip one or more cards in consecutive order , only once.
+ -> Your task is to help Fred flip the cards in such a way that the 
+ 	sum of the numbers, on front face of the cards is the maximum.
  
 	Input Specification:
 	input1: An integer N denoting the number of cards(1<=N<=500)

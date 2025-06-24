@@ -1,11 +1,10 @@
+//leet code 1089
 package Arrays;
-
 import java.util.Arrays;
 
-//leet code 1089
 /*
- Given a fixed-length integer array arr, duplicate each occurrence of zero, shifting the remaining 
- elements to the right.
+ Given a fixed-length integer array arr, duplicate each occurrence of zero, 
+ shifting the remaining elements to the right.
 
 	Example 1:
 	

@@ -44,7 +44,7 @@ public class PlusOne
 			digits[i]=0;
 		}
 		int res[]=new int[digits.length+1];
-		res[0]=1;    // By default remaining values will be zero only
+		res[0]=1;    // By default remaining values will be zero only after iteration
 		return res;
 	}
 }

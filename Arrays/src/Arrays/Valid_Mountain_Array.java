@@ -1,6 +1,5 @@
-package Arrays;
-	// 941 leetcode
-	// https://youtu.be/rwA_2zxkvaU
+// leetcode -941
+// https://youtu.be/rwA_2zxkvaU
 	/*
 	 Given an array of integers arr, return true if and only if it is a valid mountain array.
 	
@@ -21,6 +20,7 @@ package Arrays;
 	 
 	
 	 */
+package Arrays;
 public class Valid_Mountain_Array 
 {
 	public static void main(String[] args)
