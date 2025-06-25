@@ -1,5 +1,4 @@
 //https://youtu.be/frf7qxiN2qU
-package Sub_Arrays_Problems;
 /*
  Given an array nums of size n and an integer k, find the length of the 
  longest sub-array that sums to k. If no such sub-array exists, return 0.
@@ -15,6 +14,7 @@ which has a length of 4. This sub-array starts at index 1 and ends at index 4,
 and the sum of its elements (5 + 2 + 7 + 1) equals 15. Therefore, the length of this sub-array 
 is 4.
  */
+package Sub_Arrays_Problems;
 public class Longest_Sub_Array_With_Given_Sum_K 
 {
 	public static void main(String[] args) 

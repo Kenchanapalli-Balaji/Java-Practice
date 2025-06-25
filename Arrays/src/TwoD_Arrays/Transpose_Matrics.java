@@ -17,15 +17,16 @@ public class Transpose_Matrics
 		System.out.println("Orginal Array");
 		for(int i[]:arr)
 			System.out.println(Arrays.toString(i));
+		
 		int res[][]=new int[arr.length][arr[0].length];
 		for(int i=0;i<arr.length;i++)
 		{
 			for(int j=0;j<arr[i].length;j++)
 			{
-				res[j][i]=arr[i][j];
+				res[j][i]=arr[i][j];       // colums as rows and rows as columns
 			}
 		}
-		System.out.println("After altering");
+		System.out.println("After Transpose");
 		for(int i[]:res)
 			System.out.println(Arrays.toString(i));
 	}

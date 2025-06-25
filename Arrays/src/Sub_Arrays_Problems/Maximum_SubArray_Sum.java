@@ -1,5 +1,5 @@
-//https://youtu.be/Qd_qhRsSays?list=PLU83Ru7iGtAvP1rqt65MCDSBPFCzUKGXG
 //leetcode - 53
+//https://youtu.be/Qd_qhRsSays?list=PLU83Ru7iGtAvP1rqt65MCDSBPFCzUKGXG
 package Sub_Arrays_Problems;
 
 public class Maximum_SubArray_Sum 
@@ -29,7 +29,7 @@ public class Maximum_SubArray_Sum
 		
 		////////////// Approach 2 /////////////////////////
 		
-		///////////// Kadane's Algorithm ////////////////
+		///////////// Kadane's Algorithm (GujaRathis Business) ////////////////
 		int max=arr[0];
 		int sum=arr[0];
 		for(int i=1;i<arr.length;i++)

@@ -1,5 +1,5 @@
-// https://youtu.be/Z0R2u6gd3GU
 // leetcode -48 
+// https://youtu.be/Z0R2u6gd3GU
 /*
  You are given an n x n 2D matrix representing an image, rotate the 
  image by 90 degrees (clockwise).
@@ -40,7 +40,7 @@ public class Rotate_Matrix_By_90_Degrees
 		
 		///////////////// Optimal Approach without creating new Array /////////////////
 		
-		// Transpose 
+		// Transpose  // columns as rows and rows as columns
 		 for(int i=0;i<arr.length;i++)
 	        {
 	            for(int j=i;j<arr[i].length;j++)
