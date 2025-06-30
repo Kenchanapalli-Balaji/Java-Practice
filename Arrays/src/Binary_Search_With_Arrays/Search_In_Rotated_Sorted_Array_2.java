@@ -39,6 +39,7 @@ public class Search_In_Rotated_Sorted_Array_2
 				isPresent=true;
 				break;
 			}
+			// if first element and mid element or last element and mid element is same
 			if(arr[mid]==arr[low] && arr[mid]==arr[high])
 			{
 				low++;
@@ -46,7 +47,7 @@ public class Search_In_Rotated_Sorted_Array_2
 				continue;
 			}
 			
-		 // identifying the sorted array side either left or right
+		 // identifying the sorted array either side left or right side
 			if(arr[low]<=arr[mid]) // if left side sorted array
 			{
 				if(arr[low]<=target && target <= arr[mid])

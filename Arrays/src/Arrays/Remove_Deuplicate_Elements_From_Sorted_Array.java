@@ -12,8 +12,7 @@ public class Remove_Deuplicate_Elements_From_Sorted_Array
 		System.out.println(Arrays.toString(arr));
 		
 		int rd=removeDuplicate(arr);
-		System.out.println(Arrays.toString(arr));
-		
+		System.out.println(rd);
 		for(int i=0;i<rd;i++)
 			System.out.print(arr[i]+" ");
 	}

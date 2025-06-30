@@ -37,7 +37,7 @@ public class Search_In_Rotated_Sorted_Array_1
 				System.out.println(mid);
 				break;
 			}
-			// identifying the sorted array side either left or right
+			// identifying the sorted array either left side or right side
 			if(arr[low]<=arr[mid]) // checking on left side
 			{
 				if(arr[low]<=target && target <=arr[mid])

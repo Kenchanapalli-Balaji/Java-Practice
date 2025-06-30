@@ -1,5 +1,5 @@
 //https://www.youtube.com/watch?v=LhzvH2aOYXE&list=PLU83Ru7iGtAvP1rqt65MCDSBPFCzUKGXG&index=47
-package Arrays;
+package numbers;
 
 public class Lucky_Number 
 {

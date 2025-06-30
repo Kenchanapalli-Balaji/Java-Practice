@@ -22,21 +22,21 @@ public class Search_Insert_Position
 	{
 		int[] arr= {1,3,5,6};
 		int target=5;
-		int left=0;
-        int right=arr.length-1;
-        while(left<=right)
+		int low=0;
+        int high=arr.length-1;
+        while(low<=high)
         {
-            int mid=(left+right)/2;
+            int mid=(low+high)/2;
             if(arr[mid]==target)
             {
                 System.out.println(mid);  // return mid;
                 break;
             }
             else if(arr[mid]<target)
-                left=mid+1;
+                low=mid+1;
             else
-                right=mid-1;
+                high=mid-1;
         }
-       System.out.println(left);  // return left;
+       System.out.println(low);  // return low;
 	}
 }

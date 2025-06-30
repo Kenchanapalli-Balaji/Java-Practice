@@ -35,9 +35,7 @@ public class Maximum_SubArray_Sum
 		for(int i=1;i<arr.length;i++)
 		{
 			if(sum>=0)
-			{
 				sum+=arr[i];
-			}
 			else
 				sum=arr[i];
 			max=Math.max(max,sum);

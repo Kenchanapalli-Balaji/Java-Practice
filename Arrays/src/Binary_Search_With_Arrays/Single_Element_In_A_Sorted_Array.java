@@ -37,14 +37,14 @@ public class Single_Element_In_A_Sorted_Array
 				System.out.println(arr[mid]);
 				break;
 			}
-			 // We are in the left: left half pair = (even, odd) both have same values
+			 // when We are in the left: left half pair = (even, odd) both have same values
 			// if mid index is odd checking with previous one i.e even index
 			// if mid index is even checking with next one i.e odd index
 			if((mid%2==1 && arr[mid] == arr[mid-1]) ||  
 					(mid%2==0 && arr[mid]==arr[mid+1])) 
 				// Eliminate the left half:
 				low=mid+1;
-			// We are in the right: right half pair = (odd, even) both have same values
+			// when We are in the right: right half pair = (odd, even) both have same values
 			else
 				// Eliminate the right half:
 				high=mid-1;

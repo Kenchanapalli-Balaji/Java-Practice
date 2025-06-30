@@ -38,8 +38,8 @@ public class Minimum_Number_Of_Platforms_Required_For_Railway
 {
 	public static void main(String[] args) 
 	{
-		int[] arrival = {900, 940, 950, 1100, 1500, 1800};
-		int[] departure= {910, 1200, 1120, 1130, 1900, 2000};
+		int[] arrival = {900, 940, 950, 1100, 1110, 1800};
+		int[] departure= {910, 1200, 1120, 1130, 1140, 2000};
 		
 		Arrays.sort(arrival);
 		Arrays.sort(departure);

@@ -15,7 +15,7 @@ package Binary_Search_With_Arrays;
 
 import java.util.Arrays;
 
-public class Find_First_And_Occurance_Index_In_Array 
+public class Find_First_And_Last_Position_of_Element_In_Sorted_Array 
 {
 	public static void main(String[] args) 
 	{
@@ -38,8 +38,8 @@ public class Find_First_And_Occurance_Index_In_Array
 			int mid=(low+high)/2;
 			if(arr[mid]==x)
 			{
-				first=mid;
-				high=mid-1;
+				first=mid; // if we find mid element as target, the first occurrence
+				high=mid-1;// of it might be in left side but sure not in right side
 			}
 			else if(arr[mid]<x)
 				low=mid+1;
@@ -59,8 +59,8 @@ public class Find_First_And_Occurance_Index_In_Array
 			int mid=(low+high)/2;
 			if(arr[mid]==x)
 			{
-				last=mid;
-				low=mid+1;
+				last=mid; // if we find mid as target , the last position of it might be 
+				low=mid+1; // in right side only but sure not in left side
 			}
 			else if(arr[mid]<x)
 				low=mid+1;
