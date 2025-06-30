@@ -38,7 +38,7 @@ public class Longest_Common_Prefix
 			else
 				break;		
 		}
-		return i==0?"":s1.substring(0,i);
+		System.out.println(s1.substring(0,i));
 		*/
 		
 	}

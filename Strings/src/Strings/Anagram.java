@@ -72,7 +72,7 @@ class Demo
 		System.out.println(Arrays.toString(schar));
 		for(int i:schar)
 		{
-			if(i>0)
+			if(i!=0)
 				System.out.println("Not Anagram");
 		}
 		

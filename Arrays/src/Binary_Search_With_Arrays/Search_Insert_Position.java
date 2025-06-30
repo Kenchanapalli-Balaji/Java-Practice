@@ -1,4 +1,5 @@
 // leetcode - 35
+// https://youtu.be/SW4jN-Fvw1g?list=PLjOcsOwEjb12G3uwXNdzyyIs0tNql-2Am
 /*
  Given a sorted array of distinct integers and a target value, 
  return the index if the target is found. If not, return the index 
@@ -38,5 +39,15 @@ public class Search_Insert_Position
                 high=mid-1;
         }
        System.out.println(low);  // return low;
+       
+       ////////////////// Brute force Approach ///////////////
+       /*
+       for(int i=0;i<arr.length;i++)
+       {
+           if(arr[i]==target||target<arr[i])
+               return i;
+       }
+       return arr.length;
+       */
 	}
 }

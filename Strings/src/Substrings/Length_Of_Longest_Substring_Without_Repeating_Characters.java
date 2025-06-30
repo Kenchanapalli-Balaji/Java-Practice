@@ -11,8 +11,8 @@ public class Length_Of_Longest_Substring_Without_Repeating_Characters
 	{
 		String s="abcabcbb";
 		int max_length=0;
-		int start=0; int end=0;
-		List<Character> list=new ArrayList<Character>();
+		int start=0; int end=0; 
+		List<Character> list=new ArrayList<Character>(); // we can use Set also
 		while(end<s.length())
 		{
 			if(!list.contains(s.charAt(end)))
