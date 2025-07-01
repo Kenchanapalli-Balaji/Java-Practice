@@ -1,0 +1,8 @@
+Greedy Algorithm : 
+===================
+	A greedy algorithm is a problem-solving approach that makes the best immediate or 
+	locally optimal choice at each stage with the hope of finding a global optimum solution. 
+	It focuses on making the most beneficial choice at the present moment without 
+	considering the long-term consequences or potential impact on future decisions. 
+	
+// https://youtu.be/88EmYVM1jPw

@@ -1,5 +1,7 @@
+// leetcode - 202
 /*
- A happy number is a positive integer that eventually reaches 1 when you repeatedly replace it with the 
+ A happy number is a positive integer that eventually reaches 1 when you 
+repeatedly replace it with the 
  sum of the squares of its digits: 
  Example:
 19 is a happy number because 1² + 9² = 82, 8² + 2² = 68, 6² + 8² = 100, and 1² + 0² + 0² = 1 

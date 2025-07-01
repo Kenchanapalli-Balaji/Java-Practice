@@ -21,31 +21,17 @@ Output: 9
 package Arrays;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Longest_Consecutive_Sequence 
 {
 	public static void main(String[] args) 
 	{
 		int[] arr= {100,4,200,1,3,2};
-		int last_smaller=Integer.MIN_VALUE;
-		int longest=1;
-		int count=0;
-		Arrays.sort(arr);;
-		System.out.println(Arrays.toString(arr));
-		for(int i=0;i<arr.length;i++)
-		{
-			if(arr[i]-1==last_smaller)
-			{
-				count++;
-				last_smaller=arr[i];
-			}
-			else if(arr[i]!=last_smaller)
-			{
-				count=1;
-				last_smaller=arr[i];
-			}
-			longest=Math.max(count, longest);
-		}
-		System.out.println(longest);
+		Set<Integer> set=new HashSet<Integer>();
+		for(int i:arr)
+			set.add(i);
+		System.out.println(set);
 	}
 }

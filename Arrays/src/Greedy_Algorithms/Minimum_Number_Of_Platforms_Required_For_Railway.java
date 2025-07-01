@@ -30,7 +30,7 @@ Explanation : All the three trains can use the platform 1.
 
 So we required only 1 platform.
  */
-package Arrays;
+package Greedy_Algorithms;
 
 import java.util.Arrays;
 

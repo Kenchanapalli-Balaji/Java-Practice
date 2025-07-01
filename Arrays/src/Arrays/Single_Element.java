@@ -22,7 +22,16 @@ public class Single_Element
 	public static void main(String[] args) 
 	{
 		int[] arr= {1, 2, 2, 4, 3, 1, 4};
+		
 		//+++++++++++++++++++++++ Using XOR Method ++++++++++++++++++++++++++
+		/*
+		 	XOR Operations (if both are same it return s 0 otherwise it returns 1)
+		 	0 0 = 0
+		 	0 1 = 1
+		 	1 0 = 1
+		 	1 1 = 0 
+		 	Example : 1^1=0; 2^2=0; 1^2=1;
+		 */
 		int xor=0;
 		for(int i=0;i<arr.length;i++)
 		{
