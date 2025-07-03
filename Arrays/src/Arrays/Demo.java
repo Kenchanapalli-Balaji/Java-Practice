@@ -6,27 +6,22 @@ class Demo
 {
 	public static void main(String[] args) 
 	{
-		int[] arr= {0,3,7,2,5,8,4,6,0,1};
-		int last_smaller=Integer.MIN_VALUE;
-		int longest=1;
-		int count=0;
-		Arrays.sort(arr);
-		for(int i=0;i<arr.length;i++)
+
+		int[] arr= {2,3,1,1,4};
+		int farthest=0;
+		int end=0;
+		int jump=0;
+		for(int i=0;i<arr.length-1;i++)
 		{
-			if(arr[i]-1==last_smaller)
+			farthest=Math.max(farthest, i+arr[i]);
+			if(i==end)
 			{
-				count++;
-				last_smaller=arr[i];
+				jump++;
+				end=farthest;
 			}
-			else if(arr[i]-1!=last_smaller)
-			{
-				count=1;
-				last_smaller=arr[i];
-			}
-			longest=Math.max(longest, count);
 		}
-		
-		System.out.println(longest);
-	}	
+		System.out.println(jump);
+	}
+
 	
 }
