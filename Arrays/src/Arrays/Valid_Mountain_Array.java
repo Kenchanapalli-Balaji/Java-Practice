@@ -26,8 +26,7 @@ public class Valid_Mountain_Array
 	public static void main(String[] args)
 	{
 		int arr[]= {1,2,3,4,5,4,3,2,1};
-		boolean res=isValidMountainArray(arr);
-		System.out.println(res);
+		System.out.println(isValidMountainArray(arr));
 	}
 	public static boolean isValidMountainArray(int[] arr)
 	{

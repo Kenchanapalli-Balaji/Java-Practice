@@ -20,7 +20,7 @@ Algorithm :
 			3.Otherwise perform the Binary search on left and right side of 
 			the Bitonic point using Binary search.
  */
-package Arrays;
+package Binary_Search_With_Arrays;
 
 public class Bitonic_Array 
 {

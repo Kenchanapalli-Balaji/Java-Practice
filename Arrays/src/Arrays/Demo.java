@@ -6,22 +6,27 @@ class Demo
 {
 	public static void main(String[] args) 
 	{
-
-		int[] arr= {2,3,1,1,4};
-		int farthest=0;
-		int end=0;
-		int jump=0;
-		for(int i=0;i<arr.length-1;i++)
+		int[] arrival = {900, 940, 950, 1100, 1110, 1800};
+		int[] departure= {910, 1200, 1120, 1130, 1140, 2000};
+		
+		Arrays.sort(arrival); Arrays.sort(departure);
+		int i=0;int j=0; int count=0; int maxCount=0;
+		while(i<arrival.length)
 		{
-			farthest=Math.max(farthest, i+arr[i]);
-			if(i==end)
+			if(arrival[i]<departure[j])
 			{
-				jump++;
-				end=farthest;
+				count++;
+				i++;
 			}
+			else
+			{
+				count--;
+				j++;
+			}
+			maxCount=Math.max(maxCount, count);
 		}
-		System.out.println(jump);
+		System.out.println(maxCount);
+		
 	}
-
 	
 }

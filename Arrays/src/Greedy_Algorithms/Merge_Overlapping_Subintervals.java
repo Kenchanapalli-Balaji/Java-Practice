@@ -1,5 +1,6 @@
 // leetcode - 56
 // https://youtu.be/2JzRBPFYbKE
+//https://youtu.be/IexN60k62jo
 /*
  Given an array of intervals where intervals[i] = [starti, endi], merge all 
  overlapping intervals, and return an array of the non-overlapping intervals 
@@ -37,15 +38,15 @@ public class Merge_Overlapping_Subintervals
 		int start=arr[0][0];
 		int end=arr[0][1];
 		
-		for(int[] i:arr)
+		for(int i=1;i<arr.length;i++)
 		{
-			if(i[0]<=end)
-				end=Math.max(end, i[1]);
+			if(arr[i][0]<=end)
+				end=Math.max(end,arr[i][1]);
 			else
 			{
 				list.add(new int[] {start,end});
-				start=i[0];
-				end=i[1];
+				start=arr[i][0];
+				end=arr[i][1];
 			}
 		}
 		list.add(new int[] {start,end});

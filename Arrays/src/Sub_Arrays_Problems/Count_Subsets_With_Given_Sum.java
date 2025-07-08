@@ -2,7 +2,7 @@
 
 package Sub_Arrays_Problems;
 
-public class Count_Subset_Sum 
+public class Count_Subsets_With_Given_Sum 
 {
 	public static void main(String[] args)
 	{
@@ -18,7 +18,8 @@ public class Count_Subset_Sum
 			return 0;
 		if(i==arr.length)
 			return 0;
-		System.out.println(sum);
+		//System.out.println(sum);
+		// either pic the element and not picking the element
 		return countSubsets(arr,sum-arr[i],i+1)+countSubsets(arr, sum,i+1);
 	}
 }

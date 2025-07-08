@@ -18,7 +18,7 @@ public class Minimum_Size_Subarray_Sum
 	{
 		int[] arr= {2,3,1,2,4,3};
 		int target=7;
-		System.out.println(fun(arr, 7));
+		System.out.println(fun(7, arr));
 	}
 	//////////////////////Brute Force Approach O(n2) /////////////////
 		/*
@@ -43,26 +43,21 @@ public class Minimum_Size_Subarray_Sum
 		}
 		*/
 	////////////// Using Sliding window technique ///////////////////
-	static int fun(int[] arr, int target)
-	{
-		int minLength=Integer.MAX_VALUE;
-		int start=0;
-		int end=0;
-		int sum=0;
-		for(end=0;end<arr.length;end++)
-		{
-			sum+=arr[end];
-			while(sum>=target)
-			{
-				minLength=Math.min(minLength,end-start+1);
-				sum=sum-arr[start];
-				start++;
-			}	
-		}
-		if(minLength==Integer.MAX_VALUE)
-			return 0;
-		else 
-			return minLength;
-	}
+	static int fun(int target, int[] arr) 
+    {
+		int minLen=Integer.MAX_VALUE; int right=0; int left=0; int sum=0;
+        while(right<arr.length)
+        {
+            sum+=arr[right];
+            while(sum>=target)
+            {
+                minLen=Math.min(minLen,right-left+1);
+                sum-=arr[left];
+                left++;
+            }  
+            right++;
+        }
+       return minLen == Integer.MAX_VALUE ? 0 : minLen;
+    }
 	
 }

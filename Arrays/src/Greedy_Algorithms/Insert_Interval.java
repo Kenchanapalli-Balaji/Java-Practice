@@ -50,6 +50,8 @@ public class Insert_Interval
 			res.add(arr[i]); // left segment which are not overlapping
 			i++;
 		}
+		//compare start time of current interval with end time of new interval to 
+		//Confirm current two intervals are overlapping each other
 		while(i<n && arr[i][0] <= newInterval[1])
 		{
 		// middle segment which are overlapping and merging them based on min and max values

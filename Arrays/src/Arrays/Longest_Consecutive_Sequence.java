@@ -29,9 +29,24 @@ public class Longest_Consecutive_Sequence
 	public static void main(String[] args) 
 	{
 		int[] arr= {100,4,200,1,3,2};
-		Set<Integer> set=new HashSet<Integer>();
-		for(int i:arr)
-			set.add(i);
-		System.out.println(set);
+		int count=0;
+		int longest=0;
+		int last_smaller=Integer.MIN_VALUE;
+		Arrays.sort(arr);
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]-1==last_smaller)
+			{
+				count++;
+				last_smaller=arr[i];
+			}
+			else if(arr[i]-1!=last_smaller)
+			{
+				count=1;
+				last_smaller=arr[i];
+			}
+			longest=Math.max(longest, count);
+		}
+		System.out.println(longest);
 	}
 }

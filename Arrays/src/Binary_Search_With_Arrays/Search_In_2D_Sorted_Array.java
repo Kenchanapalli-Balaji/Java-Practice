@@ -46,7 +46,10 @@ public class Search_In_2D_Sorted_Array
 		while(low<=high)
 		{
 			int mid=(low+high)/2;
-			// conversion of 1D array to 2D Array (1,1)
+			
+		// Assume we have converted 2D array to 1D Array, so in this case we need to find out
+		//index of each element,  conversion of 1D array to 2D Array (1,1)
+			// [1,3,5,7,10,11,16,20,23,30,34,60]  Assumption 
 			int row=mid/m; 
 			int col=mid%m;
 			if(arr[row][col]==k)

@@ -69,7 +69,7 @@ public class Pascal_Triangle
 	}
 	static int funNcR(int row, int col)
 	{
-		// formula is NcR= N!/R! * (N-R)!  == 4c2 = 4*3/2*1= 6;
+		// formula is NcR= N!/(R! * (N-R)!)  == 4c2 = 4*3/2*1= 6;
 		int n=row-1;
 		int r=col-1;
 		int res=1;

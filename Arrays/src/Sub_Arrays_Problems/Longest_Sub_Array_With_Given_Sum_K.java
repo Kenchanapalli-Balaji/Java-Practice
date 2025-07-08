@@ -56,10 +56,10 @@ public class Longest_Sub_Array_With_Given_Sum_K
 				}
 				System.out.println(maxlen);
 				*/
-		// ++++++++++++++++++++ Optimize Solution Using 2 Pointers ++++++++++++++++++
+		// ++++++++++++++++++++ Using Sliding Window technique ++++++++++++++++++
 		
 		int maxlen=0;
-		int sum=arr[0];
+		int sum=0;
 		int left=0; 
 		int right=0;
 		while (right < arr.length)
@@ -73,11 +73,11 @@ public class Longest_Sub_Array_With_Given_Sum_K
 			}
 			// if sum = n, update the maxLen i.e. answer:
 			if(sum==n)
-			maxlen= Math.max(maxlen, right-left+1);
-			// Move forward thw right pointer:
-			right++;
+				maxlen= Math.max(maxlen, right-left+1);
 			if(right<arr.length)
-			sum=sum+arr[right];
+				sum=sum+arr[right];
+			// Move forward the right pointer:
+			right++;
 		}
 		System.out.println(maxlen);		
 				

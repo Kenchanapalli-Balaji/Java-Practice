@@ -20,21 +20,5 @@ public class Max_Consecutive_Ones
 		}
 		System.out.println(max);
 				
-		//+++++++++++++++++++++ Second Approach +++++++++++++++++++++++++
-		/*
-		for(int i=0;i<arr.length;i++)
-		{
-			int count=0;
-			for(int j=i;j<arr.length;j++)
-			{
-				if(arr[j]==1)
-					count++;
-				else
-					break;
-			}
-			max=Math.max(count, max);
-		}
-		System.out.println(max);
-		*/
 	}
 }

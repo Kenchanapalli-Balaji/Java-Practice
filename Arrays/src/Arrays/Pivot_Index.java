@@ -1,5 +1,4 @@
 //leetcode - 724
-package Arrays;
 	/*
 	 Given an array of integers nums, calculate the pivot index of this array.
 	
@@ -25,6 +24,7 @@ package Arrays;
 	Explanation:
 	There is no index that satisfies the conditions in the problem statement.
 	 */
+package Arrays;
 public class Pivot_Index 
 {
 	public static void main(String[] args) 
