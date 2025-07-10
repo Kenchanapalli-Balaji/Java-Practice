@@ -10,16 +10,11 @@ public class Demo
 	
 	public static void main(String[] args) 
 	{
-		/*
-		 -> In given String print the Non repeated characters in reverse order 
-		 	separated by with ",".
-		 */
+		List<Integer> list=Arrays.asList(1,2,3,4,5);
+		IntSummaryStatistics stats=list.stream()
+				.collect(Collectors.summarizingInt(Integer::intValue));
+		System.out.println(stats.getSum());
 		
-		String s="simple codes";
-		s.chars().mapToObj(c->(char)c).filter(c->c!=' ')
-				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-				.entrySet().stream().filter(e->e.getValue()==1).map(e->e.getKey())
-				.sorted(Comparator.reverseOrder()).forEach(c->System.out.print(c+", "));
 	}
 	
 }

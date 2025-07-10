@@ -78,6 +78,7 @@ public class Employe
 //					 .collect(Collectors.toList());
 //		for(Employe e : filteredList)
 //			System.out.println(e);
+		
 		// Optional<Employe> emp = list.stream().collect(Collectors.maxBy(Comparator.comparing(Employe::getSal)));
 	   Optional<Employe> emp = list.stream().max(Comparator.comparing(Employe::getSal));
 		System.out.println("Higest Salary: "+ emp.get());
@@ -109,7 +110,7 @@ public class Employe
 										.findFirst();
 		secondHigestSalary.ifPresent(s->System.out.println("Second Highest Salary :"+s));
 		
-		// Groping the Employee class by Department
+		// Grouping the Employee class by Department
 		
 			System.out.println(" Groping the Employee class by Department");
 			list.stream().collect(Collectors.groupingBy(Employe::getDepartment))

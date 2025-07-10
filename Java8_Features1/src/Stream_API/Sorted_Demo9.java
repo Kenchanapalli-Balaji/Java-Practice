@@ -27,7 +27,7 @@ public class Sorted_Demo9
 		List<Employe> list= Arrays.asList(e1,e2,e3,e4,e5);
 		
 		
-		List<Employe> sortedList1 = list.stream().sorted(Comparator.comparingInt(s->s.age)).toList();
+		List<Employe> sortedList1  = list.stream().sorted(Comparator.comparingInt(s->s.age)).toList();
 		System.out.println("Ascending Order Based on Age: ");
 		for( Employe c : sortedList1)
 		{
