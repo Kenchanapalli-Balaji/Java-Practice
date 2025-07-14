@@ -41,7 +41,7 @@ public class Sort_Characters_By_Frequency
 		}
 		List<Character> list=new ArrayList<Character>(hm.keySet());
 		System.out.println(list);
-		list.sort((a,b)->hm.get(b)-hm.get(a)); // Descending Order
+		list.sort((a,b)->hm.get(b)-hm.get(a)); // Descending Order based on their frequency
 		for(char ch:list)
 		{
 			for(int i=0;i<hm.get(ch);i++)

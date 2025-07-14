@@ -6,21 +6,14 @@ class CountCharactersInString
 {
 	public static void main1(String[] args)
 	{
-		String st="Balaji Kallur";
+		String st="Balaji";
 		st=st.toLowerCase();
 
 		HashMap<Character,Integer> hm=new HashMap<Character,Integer>();
 
-		char[] chars=st.toCharArray();
-		System.out.println(chars.toString());
-		
-		for(Character ch:chars)
+		for(char c:st.toCharArray())
 		{
-			if(hm.containsKey(ch))
-				hm.put(ch,hm.get(ch)+1);
-			
-			else if(ch!=' ')//to avoid  white spaces
-				hm.put(ch,1);
+			hm.put(c, hm.getOrDefault(c,0)+1);
 		}
 		
 		for(Character ch:hm.keySet())

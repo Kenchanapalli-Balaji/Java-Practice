@@ -1,4 +1,4 @@
-package numbers;
+package Bit_Manupulations;
 import java.util.Scanner;
 
 public class Binary_To_Decimal 
@@ -11,7 +11,6 @@ public class Binary_To_Decimal
 		System.out.println(decimalToBinary(n));
 		String s=decimalToBinary(n);
 		System.out.println(binaryToDecimal(s));
-		
 	}
 	
 	static String decimalToBinary(int n)

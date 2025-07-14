@@ -11,6 +11,11 @@ import java.util.Set;
 public class Demo {
 	public static void main(String[] args) 
 	{
+		int n=13;
+		System.out.println(n>>1);
+		
 		
 	}
+	
+	
 }

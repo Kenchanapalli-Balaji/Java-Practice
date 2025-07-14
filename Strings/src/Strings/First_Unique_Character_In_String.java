@@ -22,7 +22,7 @@ public class First_Unique_Character_In_String
 		{
 			if(freq[s.charAt(i)-97]==1)
 			{
-				System.out.println(i);
+				System.out.println(s.charAt(i));
 				break;
 			}			
 		}
@@ -37,7 +37,7 @@ public class First_Unique_Character_In_String
 		{
 			if(map.get(s.charAt(i))==1)
 			{
-				System.out.println(i);
+				System.out.println(s.charAt(i));
 				break;
 			}
 		}

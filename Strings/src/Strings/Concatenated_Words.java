@@ -56,6 +56,8 @@ public class Concatenated_Words
 		{
 			String prefix=s.substring(0,i);
 			String suffix=s.substring(i,s.length());
+			// what if we have array like {"ca","t","dog","catdog"} here "ca" and "t" also 
+			// concatenated , Soo we are checking suffix again with sub arrays of it
 			if(set.contains(prefix) && (set.contains(suffix) || isConcatenated(suffix, set)))
 				return true;
 		}
