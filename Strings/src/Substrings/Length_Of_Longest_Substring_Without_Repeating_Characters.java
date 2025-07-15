@@ -11,6 +11,29 @@ public class Length_Of_Longest_Substring_Without_Repeating_Characters
 	{
 		String s="abcabcbb";
 		int max_length=0;
+		
+		//////////////////////// BruteForce Approach ///////////////////////////
+		/*
+		for(int i=0;i<s.length();i++)
+		{
+			List<Character> list=new ArrayList<Character>();
+			for(int j=i;j<s.length();j++)
+			{
+				if(list.contains(s.charAt(j)))
+				{
+					maxlength=Math.max(maxlength, j-i);
+					break;
+				}
+				list.add(s.charAt(j));
+			}
+		}
+		System.out.println(maxlength);
+		
+		*/
+		
+		
+		//////////////////////////// Sliding Window Technique ////////////////////
+		
 		int start=0; int end=0; 
 		List<Character> list=new ArrayList<Character>(); // we can use Set also
 		while(end<s.length())
