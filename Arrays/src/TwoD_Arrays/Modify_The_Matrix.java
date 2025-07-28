@@ -1,7 +1,3 @@
-package TwoD_Arrays;
-
-import java.util.Arrays;
-
 /*
  Given a 0-indexed m x n integer matrix matrix, create a new 0-indexed matrix called answer. 
   Make answer equal to matrix, then replace each element with the value -1 with the maximum element 
@@ -12,6 +8,9 @@ Explanation: The diagram above shows the elements that are changed (in blue).
 - We replace the value in the cell [1][1] with the maximum value in the column 1, that is 8.
 - We replace the value in the cell [0][2] with the maximum value in the column 2, that is 9.
  */
+package TwoD_Arrays;
+
+import java.util.Arrays;
 public class Modify_The_Matrix 
 {
 	

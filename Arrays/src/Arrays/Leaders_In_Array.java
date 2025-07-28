@@ -24,10 +24,7 @@ public class Leaders_In_Array
 		}
 	}
 	*/
-	
-
-//-----------------------------------------------------------------------------	
-	// Efficient Way
+//////////////////////////// Efficient Way ////////////////////////////////////
 	
 	public static void main(String[] args) 
 	{

@@ -1,40 +1,36 @@
 package Arrays;
 
 import java.util.Arrays;
-
-//public class ReverseArrayElements 
-//{
-//	
-//	
-//	public static void main(String[] args) 
-//	{
-//		int ar[]= {10,20,30,40,50,60,70,80,90};
-//		System.out.println("Befor Reverse elements");
-//		System.out.println(Arrays.toString(ar));
-//		
-//		for (int i=0;i<ar.length/2;i++)
-//		{
-//			int t=ar[i];
-//			ar[i]=ar[ar.length-1-i];
-//			ar[ar.length-1-i]=t;
-//		}
-//		System.out.println("After Reverse Elements");
-//		System.out.println(Arrays.toString(ar));		
+/*
+public class ReverseArrayElements 
+{
+	public static void main(String[] args) 
+	{
+		int ar[]= {10,20,30,40,50,60,70,80,90};
+		System.out.println("Befor Reverse elements");
+		System.out.println(Arrays.toString(ar));
 		
-
-
-//		String st="[";
-//		for(int i=0;i<ar.length;i++)
-//		{
-//			st=st+ar[i];
-//			if(i<ar.length-1)
-//				st=st+",";
-//		}
-//		st=st+"]";
-//		System.out.println(st);
-	
-//	}
-//}
+		for (int i=0;i<ar.length/2;i++)
+		{
+			int t=ar[i];
+			ar[i]=ar[ar.length-1-i];
+			ar[ar.length-1-i]=t;
+		}	
+		System.out.println("After Reverse Elements");
+		System.out.println(Arrays.toString(ar));		
+		
+		String st="[";
+		for(int i=0;i<ar.length;i++)
+		{
+			st=st+ar[i];
+			if(i<ar.length-1)
+				st=st+",";
+		}
+		st=st+"]";
+		System.out.println(st);
+	}
+}
+*/
 
 class ReverseArrayElements
 {
@@ -49,7 +45,6 @@ class ReverseArrayElements
 			end--;
 		}
 	}
-	
 	public static void main(String[] args) 
 	{
 		int ar[]= {10,20,30,40,50,60,70,80,90};

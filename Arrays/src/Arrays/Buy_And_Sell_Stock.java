@@ -20,7 +20,6 @@
 	Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
 	 */
 
-
 package Arrays;
 
 public class Buy_And_Sell_Stock 

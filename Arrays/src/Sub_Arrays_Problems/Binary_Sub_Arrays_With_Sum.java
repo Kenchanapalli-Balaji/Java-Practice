@@ -50,7 +50,7 @@ public class Binary_Sub_Arrays_With_Sum
 	            sum+= arr[r];
 	            while(sum > goal){
 	                sum -= arr[l];
-	                l+=1;
+	                l++;
 	            }
 	            count += r-l+1;
 	            r++;

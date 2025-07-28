@@ -13,13 +13,15 @@ You must write a solution in O(log(m * n)) time complexity.
  */
 package Binary_Search_With_Arrays;
 
+import java.util.Arrays;
+
 public class Search_In_2D_Sorted_Array 
 {
 	public static void main(String[] args) 
 	{
 		int[][] arr= {{1,3,5,7},{10,11,16,20},{23,30,34,60}};
-		int target=30;
-		System.out.println(search(arr,target));
+		int target=16;
+		System.out.println(Arrays.toString(search(arr,target)));
 	}
 	//////////////////// Brute Force Approach ////////////////////////
 	/*
@@ -37,7 +39,7 @@ public class Search_In_2D_Sorted_Array
 	}
 	*/
 	/////////////////////////// Optimal Approach /////////////////////////
-	static boolean search(int[][] arr, int k)
+	static int[] search(int[][] arr, int k)
 	{
 		int n=arr.length;
 		int m=arr[0].length;
@@ -53,13 +55,13 @@ public class Search_In_2D_Sorted_Array
 			int row=mid/m; 
 			int col=mid%m;
 			if(arr[row][col]==k)
-				return true;
+				return new int[] {row,col};
 			else if(arr[row][col]<k)
 				low=mid+1;
 			else
 				high=mid-1;
 		}
-		return false;
+		return new int[] {-1,-1};
 	}
 	
 }

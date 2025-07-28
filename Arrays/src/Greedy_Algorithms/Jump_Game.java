@@ -45,9 +45,8 @@ public class Jump_Game
 				return false;
 			maxIndex=Math.max(maxIndex, i+arr[i]);
 		}
-		if(maxIndex>=arr.length-1)
-			return true;
-		return false;
+		return true;
+		
 	}
 	*/
 }

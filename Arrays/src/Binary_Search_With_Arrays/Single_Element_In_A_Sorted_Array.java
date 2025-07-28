@@ -22,10 +22,10 @@ public class Single_Element_In_A_Sorted_Array
 		////////////////////// Using Binary Search Algorithm /////////////////////
 		
 		// Edge cases 
-		if(arr[0]!=arr[1])
-			System.out.println(arr[0]); // checking first element with next element
-		if(arr[arr.length-1]!=arr[arr.length-2])
-			System.out.println(arr[arr.length-1]); // checking last element with previous one
+		if(arr[0]!=arr[1]) // checking first element with next element
+			System.out.println(arr[0]); 
+		if(arr[arr.length-1]!=arr[arr.length-2]) // checking last element with previous one
+			System.out.println(arr[arr.length-1]); 
 		int low=1;
 		int high=arr.length-2;
 		while(low<=high)

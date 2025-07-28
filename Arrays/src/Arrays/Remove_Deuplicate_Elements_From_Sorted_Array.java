@@ -24,8 +24,7 @@ public class Remove_Deuplicate_Elements_From_Sorted_Array
 			if(arr[rd]!=arr[i])
 			{
 				rd++;
-				arr[rd]=arr[i];
-				
+				arr[rd]=arr[i];	
 			}	
 		}
 		return rd+1;

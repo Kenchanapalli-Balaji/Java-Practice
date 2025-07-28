@@ -1,4 +1,5 @@
-//The next greater element is the first element towards right, which is greater then the current element
+//The next greater element is the first element towards right, 
+// which is greater then the current element
 package Arrays;
 
 import java.util.Arrays;

@@ -27,13 +27,13 @@ class Merge_Two_Arrays
 
 
 /*
-int j=0;
-for (int i = 0; i < ar1.length; i++, j++) 
-{
-	res[j] =ar1 [i];
-}
-for (int i = 0; i < ar2.length; i++, j++) 
-{
-	res[j] =ar2 [i];
-}
+		int j=0;
+		for (int i = 0; i < ar1.length; i++, j++) 
+		{
+			res[j] =ar1 [i];
+		}
+		for (int i = 0; i < ar2.length; i++, j++) 
+		{
+			res[j] =ar2 [i];
+		}
 */

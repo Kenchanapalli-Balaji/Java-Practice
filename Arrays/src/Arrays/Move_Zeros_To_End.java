@@ -10,7 +10,7 @@ public class Move_Zeros_To_End
 	{
 		int ar[]= {0,1,2,3,0,4,5,6,0,7,8,9,10};
 		
-		// Brute Force Approach: 
+		//////////////////// Brute Force Approach: ////////////////////
 		/*
 		 	List<Integer> list=new ArrayList<Integer>();  // Non Zero Elements
 			for(int i=0;i<ar.length;i++)
