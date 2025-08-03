@@ -1,38 +1,71 @@
 package Arrays;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Currency;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.Stack;
 
 class Demo
 {
+	class Node
+	{
+		int data;
+		Node next;
+		Node(int data)
+		{
+			this.data=data;
+		}
+	}
+	Node head;
+	public void add(int data)
+	{
+		Node n=new Node(data);
+		if(head==null)
+		{
+			head=n;
+			return;
+		}
+		Node temp=head;
+		while(temp.next!=null)
+		{
+			temp=temp.next;
+		}
+		temp.next=n;
+	}
+	public void reverse()
+	{
+		Stack<Integer> stk=new Stack<Integer>();
+		Node temp=head;
+		while(temp!=null)
+		{
+			stk.push(temp.data);
+			temp=temp.next;
+		}
+		temp=head;
+		while(temp!=null)
+		{
+			temp.data=stk.pop();
+			temp=temp.next;
+		}
+	}
+	public String toString()
+	{
+		String st="[";
+		Node temp=head;
+		while(temp!=null)
+		{
+			st=st+temp.data;
+			if(temp.next!=null)
+				st=st+"->";
+			temp=temp.next;
+		}
+		return st+"]";
+				
+	}
+	
 	public static void main(String[] args) 
 	{
-		int ar1[]= {1,2,3,4,5,6};
-		int ar2[]= {7,8,9,10,11,12};
-		int[] res=new int[ar1.length +ar2.length];
-		int i=0; int j=0;
-		for(int k=0;k<res.length;)
-		{
-			if(i<ar1.length)
-			{
-				res[k]=ar1[i];
-				i++;
-				k++;
-			}
-			if(j<ar2.length)
-			{
-				res[k]=ar2[j];
-				j++;
-				k++;
-			}
-		}
-		System.out.println(Arrays.toString(res));
+		Demo dl=new Demo();
+		dl.add(10);dl.add(20);dl.add(30);dl.add(40);dl.add(50);
+		System.out.println(dl);
+		dl.reverse();
+		System.out.println(dl);
 	}
 }

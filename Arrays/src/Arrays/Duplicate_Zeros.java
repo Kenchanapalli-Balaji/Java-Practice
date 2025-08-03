@@ -1,7 +1,4 @@
 //leet code 1089
-package Arrays;
-import java.util.Arrays;
-
 /*
  Given a fixed-length integer array arr, duplicate each occurrence of zero, 
  shifting the remaining elements to the right.
@@ -17,6 +14,10 @@ import java.util.Arrays;
 	Output: [1,2,3]
 	Explanation: After calling your function, the input array is modified to: [1,2,3]
  */
+package Arrays;
+import java.util.Arrays;
+
+
 public class Duplicate_Zeros 
 {
 	public static void main(String[] args) 

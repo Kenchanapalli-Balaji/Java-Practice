@@ -45,7 +45,7 @@ public class Remove_Duplicates_From_Sorted_Array_2
 			// if (arr[i]==arr[i-2]) means Duplicate elements and appearing more than 2 times;
 			if(arr[count-2]!=arr[i])
 			{
-				arr[count]=arr[i];
+				 arr[count]=arr[i];
 				count++;
 			}
 		}
