@@ -1,6 +1,7 @@
 package Stream_API;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -13,7 +14,8 @@ public class Find_Maximum_Repeated_Number
 		Integer maximumrepeatedNumber = list.stream()
 				.collect(Collectors.groupingBy(n->n,Collectors.counting()))
 				.entrySet().stream()
-				.max(Map.Entry.comparingByValue())
+				.max(Comparator.comparing(Map.Entry::getValue))
+				//.max(Map.Entry.comparingByValue())
 				.map(Map.Entry::getKey)
 				.orElse(null);
 		System.out.println(maximumrepeatedNumber);
