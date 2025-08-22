@@ -6,7 +6,7 @@ creating a thread with a Runnable. However, one feature lacking in  Runnable is 
 make a thread return result when it terminates, i.e. when run() completes. 
 For supporting this feature, the Callable interface is present in Java.
 
-Callable vs Runnable:
+Callable vs Runnable  :
 ======================
 ->For implementing Runnable, the run() method needs to be implemented which does not 
 	return anything, while for a Callable, the call() method needs to be implemented which 
