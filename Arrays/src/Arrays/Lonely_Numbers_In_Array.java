@@ -24,7 +24,7 @@ public class Lonely_Numbers_In_Array
 {
 	public static void main(String[] args) 
 	{
-		int[] arr={1,3,5,3};
+		int[] arr={10,6,5,8};
 		List<Integer> list=new ArrayList<Integer>();
 		Map<Integer, Integer> hm=new HashMap<Integer, Integer>();
 		for(int i:arr)

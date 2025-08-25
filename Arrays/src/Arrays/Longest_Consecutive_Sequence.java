@@ -21,8 +21,6 @@ Output: 9
 package Arrays;
 
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 public class Longest_Consecutive_Sequence 
 {

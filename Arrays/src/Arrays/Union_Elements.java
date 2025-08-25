@@ -10,13 +10,7 @@ Explanation: The elements 1, 2 are common to both, 3, 4, 5 are from nums1 and 7 
  */
 package Arrays;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.Arrays;
+import java.util.*;
 public class Union_Elements 
 {
 	public static void main(String[] args) 

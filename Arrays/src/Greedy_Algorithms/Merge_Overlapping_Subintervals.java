@@ -33,7 +33,7 @@ public class Merge_Overlapping_Subintervals
 	static int[][] merge(int[][] arr)
 	{
 		List<int[]> list=new ArrayList<int[]>();
-		Arrays.sort(arr,(a,b)->a[0]-b[0]);
+		Arrays.sort(arr,(a,b)->a[0]-b[0]);   //Arrays.sort(arr,(a,b)->Integer.compare(a[0], b[0]));
 		
 		int start=arr[0][0];
 		int end=arr[0][1];

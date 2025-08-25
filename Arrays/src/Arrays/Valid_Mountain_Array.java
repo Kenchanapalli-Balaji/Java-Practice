@@ -1,4 +1,4 @@
-// leetcode -941
+ // leetcode -941
 // https://youtu.be/rwA_2zxkvaU
 	/*
 	 Given an array of integers arr, return true if and only if it is a valid mountain array.

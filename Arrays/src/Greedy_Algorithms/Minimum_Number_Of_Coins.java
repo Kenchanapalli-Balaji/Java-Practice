@@ -33,7 +33,6 @@ public class Minimum_Number_Of_Coins
 				list.add(coins[i]);
 			}
 		}
-		if(list.isEmpty())
 		System.out.println(list);
 		System.out.println("Minimum number of coins required is : "+list.size());
 	}
