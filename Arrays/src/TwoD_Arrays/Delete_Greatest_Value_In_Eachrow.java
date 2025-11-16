@@ -43,8 +43,7 @@ public class Delete_Greatest_Value_In_Eachrow
 			int max=0;
 			for(int row=0;row<arr.length;row++)
 			{
-				if(arr[row][col]>max)
-					max=arr[row][col];
+				max=Math.max(max, arr[row][col]);
 			}
 			sum+=max;
 		}

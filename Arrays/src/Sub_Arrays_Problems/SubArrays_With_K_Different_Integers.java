@@ -17,10 +17,7 @@ Explanation: Subarrays formed with exactly 2 different integers:
  */
 package Sub_Arrays_Problems;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class SubArrays_With_K_Different_Integers 
 {
@@ -29,7 +26,7 @@ public class SubArrays_With_K_Different_Integers
 		int[] arr= {1,2,1,2,3};
 		int k=2;
 		System.out.println(fun(arr, k)-fun(arr,k-1)); 
-		// count total sub arrays with <=k and <=k-1 after that subtract from,we wil get exact==k 
+		// count total sub arrays with <=k and <=k-1 after that subtract from,we will get exact==k 
 	}
 	/////////////////////// Brute Force Approach /////////////////////////
 	/*

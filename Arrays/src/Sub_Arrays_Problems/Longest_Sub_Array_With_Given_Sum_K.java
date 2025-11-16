@@ -60,26 +60,23 @@ public class Longest_Sub_Array_With_Given_Sum_K
 		
 		int maxlen=0;
 		int sum=0;
-		int left=0; 
-		int right=0;
-		while (right < arr.length)
+		int l=0; 
+		int r=0;
+		while (r < arr.length)
 		{
-			// if sum > n, reduce the subarray from left
-			// until sum becomes less or equal to n:
-			while (left <= right && sum > n)
+			sum+=arr[r];
+			while(sum>n)
 			{
-				sum=sum-arr[left];
-				left++;
+				sum-=arr[l];
+				l++;
 			}
-			// if sum = n, update the maxLen i.e. answer:
 			if(sum==n)
-				maxlen= Math.max(maxlen, right-left+1);
-			if(right<arr.length)
-				sum=sum+arr[right];
-			// Move forward the right pointer:
-			right++;
+			{
+				maxlen=Math.max(maxlen, r-l+1);
+			}
+			r++;
 		}
-		System.out.println(maxlen);		
-				
+		System.out.println(maxlen);
+					
 	}
 }
