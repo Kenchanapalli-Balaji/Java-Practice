@@ -15,7 +15,7 @@ Example 2:
 Input: flowerbed = [1,0,0,0,1], n = 2
 Output: false
  */
-package Greedy_Algorithms;
+package Greedy_Algorithms_Easy;
 
 public class Can_Place_Flowers {
 	public static void main(String[] args) {

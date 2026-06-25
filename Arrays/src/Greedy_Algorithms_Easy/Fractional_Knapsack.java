@@ -33,7 +33,7 @@ Output: 160.000000
 
 Explanation: Both items fit entirely (total weight 30 ≤ 50).
  */
-package Greedy_Algorithms;
+package Greedy_Algorithms_Easy;
 
 import java.util.Arrays;
 

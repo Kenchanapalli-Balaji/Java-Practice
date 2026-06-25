@@ -13,7 +13,7 @@ Output: 3
 
 Explanation: 11 = 5 + 5 + 1. We need 3 coins to make up the amount 11.
  */
-package Greedy_Algorithms;
+package Greedy_Algorithms_Easy;
 
 import java.util.ArrayList;
 import java.util.List;

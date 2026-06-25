@@ -12,7 +12,7 @@ Explanation: All possible pairings (ignoring the ordering of elements) are:
 3. (1, 2), (3, 4) -> min(1, 2) + min(3, 4) = 1 + 3 = 4
 So the maximum possible sum is 4.
  */
-package Greedy_Algorithms;
+package Greedy_Algorithms_Easy;
 
 import java.util.Arrays;
 

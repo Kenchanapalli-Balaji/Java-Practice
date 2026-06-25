@@ -22,7 +22,7 @@ From the fourth customer, we collect a $10 bill and give back a $5.
 From the fifth customer, we give a $10 bill and a $5 bill.
 Since all customers got correct change, we output true.
  */
-package Greedy_Algorithms;
+package Greedy_Algorithms_Easy;
 
 public class Lemonade_Change 
 {

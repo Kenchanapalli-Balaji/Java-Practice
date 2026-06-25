@@ -22,7 +22,7 @@ Input: s = "(*)"
 Output: true
  */
 
-package Greedy_Algorithms;
+package Greedy_Programs;
 
 public class Valid_Parenthesis_Strings 
 {
